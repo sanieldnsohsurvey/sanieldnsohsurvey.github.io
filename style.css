@@ -1,0 +1,388 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+::selection {
+    color: #282424;
+    background: #999999;
+}
+
+::-webkit-scrollbar
+{
+    width: 6px;
+}
+
+::-webkit-scrollbar-track
+{
+    background: rgba(0, 0, 0, 0.1);
+}
+
+::-webkit-scrollbar-thumb
+{
+    background: rgba(40, 36, 36, 0.5);
+    border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover
+{
+    background: rgba(40, 36, 36, 0.75);
+    border-radius: 3px;
+}
+
+body {
+    background: rgba(0, 0, 0, 0);
+    color: #282424;
+    font-size: 24px;
+}
+
+h1 { font-size: 56px;}
+h2 { font-size: 36px;}
+h3 { font-size: 28px;}
+h4 { font-size: 24px;}
+h5 { font-size: 20px;}
+h6 { font-size: 16px;}
+
+h1, h2, h3, h4, h5, h6, strong {
+    color: #282424;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+p {
+    color: #282424;
+    font-size: 24px;
+}
+
+a {
+    color: #282424;
+    text-decoration: underline dotted #8ba145;
+}
+
+caption {
+    font-size: 28px;
+    background: linear-gradient(to top, #2f4f4f, #696969);
+    padding: 10px;
+}
+
+table {
+    table-layout: fixed;
+    border: 2px solid #2f4f4f;
+    width: 100%;
+}
+
+td {
+    padding: 3px;
+    text-align: left;
+    font-size: 20px;
+    border: 1px solid #2f4f4f;
+}
+
+main {
+    min-height: 100vh;
+    background: linear-gradient(to right top, #2f4f4f, #696969);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fluo {
+    text-shadow: 2px 2px 3px #cfff04;
+}
+
+.sm_caps {
+    font-variant: small-caps;
+}
+
+.glass {
+    background: linear-gradient(to right bottom, rgba(255, 255, 230, 0.6),rgba(255, 255, 230, 0.2));
+    width: 85%;
+    height: 85vh;
+    border-radius: 25px;
+    border: 5px;
+    border-style: double;
+    backdrop-filter: blur(1rem);
+    z-index: 3;
+    display: flex;
+}
+
+.circle1, .circle2, .circle3, .circle4 {
+    background: linear-gradient(to right bottom, rgba(255, 255, 230, 0.85),rgba(255, 255, 230, 0.15));
+    border-radius: 50%;
+    position: absolute;
+    z-index: 2;
+}
+
+.circle1{
+    top: 3%;
+    left: 2.5%;
+    width: 300px;
+    height: 300px;
+}
+
+.circle2{
+    bottom: 2%;
+    right: 4.5%;
+    width: 250px;
+    height: 250px;
+}
+
+.circle3{
+    bottom: 37%;
+    right: 55%;
+    width: 175px;
+    height: 175px;
+}
+
+.circle4{
+    top: 27.5%;
+    right: 35%;
+    width: 125px;
+    height: 125px;
+}
+
+.footer {
+    position: absolute;
+    width: 100%;
+    height: 7%;
+    bottom: 0;
+    z-index: 1;
+    background: linear-gradient(to top, rgba(255, 255, 230, 0.7),rgba(255, 255, 230, 0));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info {
+    position: fixed;
+    bottom: 10px;
+    width: 100%;
+}
+
+.info h6 {
+    text-align: center;
+}
+
+.dashboard {
+    background: linear-gradient(to right bottom, rgba(255, 255, 230, 0.4),rgba(255, 255, 230, 0.3));
+    flex: 1;
+    height: 100%;
+    border-radius: 25px;
+    z-index: 4;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.logo {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.logo h2 {
+    text-align: center;
+}
+
+.pages {
+    width: 100%;
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.page {
+    background: linear-gradient(to right top, #2f4f4f, #696969);
+    width: 75%;
+    height: 50px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.site {
+    flex: 4;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+}
+
+.site iframe {
+    width: 90%;
+    height: 90%;
+}
+
+.Home {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: left;
+    height: 98%;
+}
+/*Come sistemare height di un iframe*/
+.Contents {
+    position: relative;
+    width: 99%;
+    height: 0;
+    padding-bottom: 47%;
+}
+
+.Contents iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+/**/
+.news {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.new {
+    background: linear-gradient(to right bottom, rgba(255, 255, 230, 0.4),rgba(255, 255, 230, 0.3));
+    border-radius: 20px;
+    width: 98%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: left;
+    padding: 20px;
+    margin-bottom: 5px;
+}
+
+.Data {
+    font-size: 10px;
+    margin-top: 2px;
+    text-align: left;
+}
+
+.Titolo {
+    font-size: 16px;
+    text-align: left;
+    font-variant: small-caps;
+}
+
+.Notizia {
+    font-size: 14px;
+    text-align: left;
+}
+
+.Note {
+    font-size: 12px;
+    text-align: left;
+    font-variant: small-caps;
+}
+
+/*Inizio Tabella*/
+
+.table-container {
+    display: grid;
+    justify-content: space-evenly;
+    align-content: center;
+    grid-template-columns: 2fr 2fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+        'header header header'
+        'Kiara Scognamiglio KSptS'
+        'Marketiell0 Santogjianni MSptS'
+        'Flavio Schiavone FSptS'
+        'Gioggia Vellucci GVptS'
+        'Giovanni Scognamilio GSptS'
+        'Renato Scherillo RSptS'
+        'Mirco Pulcrano MPptS'
+        'Matteo Ucciero MUptS'
+    ;
+    background: linear-gradient(to right top, #2f4f4f, #696969);
+    border-radius: 15px;
+}
+
+.table-header {
+    grid-area: header;
+    text-align: center;
+    color: #282424;
+}
+
+.TB {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.Nome {
+    margin: 2px;
+    background: linear-gradient(to right bottom, rgba(255, 255, 230, 0.4),rgba(255, 255, 230, 0.3));
+    border-radius: 15px 5px 5px 15px;
+    text-align: left;
+    color: #282424; 
+}
+
+.Cognome {
+    margin: 2px;
+    background: linear-gradient(to right bottom, rgba(255, 255, 230, 0.4),rgba(255, 255, 230, 0.3));
+    border-radius: 5px;
+    text-align: left;
+    color: #282424; 
+}
+
+.Punti {
+    margin: 2px;
+    background: linear-gradient(to right bottom, rgba(255, 255, 230, 0.4),rgba(255, 255, 230, 0.3));
+    border-radius: 5px 15px 15px 5px;
+    text-align: right;
+    color: #282424; 
+}
+
+/*A quanto pare devo farlo per ogni casella*/
+
+#Kiara { grid-area: Kiara; }
+#Scognamoglio { grid-area: Scognamiglio; }
+#KSptS { grid-area: KSptS; }
+
+#Marketiell0 { grid-area: Marketiell0; }
+#Santogjianni { grid-area: Santogjianni; }
+#MSptS { grid-area: MSptS; }
+
+#Flavio { grid-area: Flavio; }
+#Schiavone { grid-area: Schiavone; }
+#FSptS { grid-area: FSptS; }
+
+#Gioggia { grid-area: Gioggia; }
+#Vellucci { grid-area: Vellucci; }
+#GVptS { grid-area: GVptS; }
+
+#Giovanni { grid-area: Giovanni; }
+#Scognamilio { grid-area: Scognamilio; }
+#GSptS { grid-area: GSptS; }
+
+#Renato { grid-area: Renato; }
+#Scherillo { grid-area: Scherillo; }
+#RSptS { grid-area: RSptS; }
+
+#Mirco { grid-area: Mirco; }
+#Pulcrano { grid-area: Pulcrano; }
+#MPptS { grid-area: MPptS; }
+
+#Matteo { grid-area: Matteo; }
+#Ucciero { grid-area: Ucciero; }
+#MUptS { grid-area: MUptS; }
+
+/*Fine Tabella*/
